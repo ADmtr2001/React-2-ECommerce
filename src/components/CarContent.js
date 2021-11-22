@@ -11,7 +11,7 @@ const CartContent = () => {
   return (
     <Wrapper className='section section-center'>
       <CartColumns />
-      <hr />
+      <hr style={{ margin: "1.5rem 0 2.5rem 0" }} />
       {cart.map((item) => {
         return <CartItem key={item.id} {...item} />;
       })}
