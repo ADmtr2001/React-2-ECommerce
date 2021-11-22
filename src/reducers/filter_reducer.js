@@ -60,10 +60,7 @@ const filter_reducer = (state, action) => {
     const { all_products } = state;
     const { text, category, company, color, price, shipping } = state.filters;
 
-    // console.log("FUCKKKKKKKKKKKK", all_products);
     let tempProducts = [...all_products];
-    // console.log("Leeeeeeets", tempProducts);
-    // console.log("HELLLLLLLLLL", tempProducts[0].name);
 
     if (text) {
       tempProducts = tempProducts.filter((product) => {
